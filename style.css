@@ -143,3 +143,8 @@ td {
     transition: 0.1s;
     border: azure 1px solid;
 }
+
+#res td {
+    text-align: center;
+    vertical-align: middle;
+}

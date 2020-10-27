@@ -61,28 +61,35 @@ function validate(){
 
 function addRow( X, Y, R, res, runtime, currTime){
     {
-        var tbody = document.getElementById('res')
-        var row = document.createElement("tr");
+        let tbody = document.getElementById('res')
+        let row = document.createElement("tr");
         row.className = 'data'
         tbody.appendChild(row);
-        var td1 = document.createElement("td");
-        var td2 = document.createElement("td");
-        var td3 = document.createElement("td");
-        var td4 = document.createElement("td");
+        let td1 = document.createElement("td");
+        let td2 = document.createElement("td");
+        let td3 = document.createElement("td");
+        let td4 = document.createElement("td");
+        let td5 = document.createElement("td");
+        let td6 = document.createElement("td");
+
         row.appendChild(td1);
         row.appendChild(td2);
         row.appendChild(td3);
         row.appendChild(td4);
-        td1.innerHTML = "X = " + X + " Y = " + Y + " R = " + R;
+        row.appendChild(td5);
+        row.appendChild(td6);
+        td1.innerHTML = X
+        td2.innerHTML = Y
+        td3.innerHTML = R
 
         if(res){
-            td2.innerHTML = "Попадание";
+            td4.innerHTML = "Попадание";
         }
         else {
-            td2.innerHTML = "Промах";
+            td4.innerHTML = "Промах";
         }
-        td3.innerHTML =(runtime*1000).toFixed(3) + " ms";
-        td4.innerHTML = currTime;
+        td5.innerHTML =(runtime*1000).toFixed(3) + " ms";
+        td6.innerHTML = currTime;
     }
 }
 
