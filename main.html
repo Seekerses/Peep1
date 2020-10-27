@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Popov D.M. Lab01 P3213</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <table class="studInfo">
+            <tr>
+                <td>Popov Daniil Michailovich</td>
+                <td>Group P3213</td>
+                <td>Variant 2419</td>
+            </tr>
+        </table>
+    </header>
+    <main>
+        <table>
+            <tr>
+                <td>
+                    <img src="src/graph2.png" id="graph" alt="gg">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <table>
+                    <tr>
+                        <td>
+                            <form  name="data" onsubmit="return false">
+                            <table class="contentTable">
+                                <tr>
+                                    <td>
+                                    Insert X:
+                                        <input type="checkbox" id="checkX_1" name="X" value="-4"> <label for="checkX_1">-4</label>
+                                        <input type="checkbox" id="checkX_2" name="X" value="-3"> <label for="checkX_2">-3</label>
+                                        <input type="checkbox" id="checkX_3" name="X" value="-2"> <label for="checkX_3">-2</label>
+                                        <input type="checkbox" id="checkX_4" name="X" value="-1"> <label for="checkX_4">-1</label>
+                                        <input type="checkbox" id="checkX_5" name="X" value="0"> <label for="checkX_5">0</label>
+                                        <input type="checkbox" id="checkX_6" name="X" value="1"> <label for="checkX_6">1</label>
+                                        <input type="checkbox" id="checkX_7" name="X" value="2"> <label for="checkX_7">2</label>
+                                        <input type="checkbox" id="checkX_8" name="X" value="3"> <label for="checkX_8">3</label>
+                                        <input type="checkbox" id="checkX_9" name="X" value="4"> <label for="checkX_9">4</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Insert Y:
+                                        <input type="text" id="checkY" name="Y" placeholder="Input Y here...">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Insert R:
+                                        <input type="checkbox" id="checkR_1" name="R" value="1"> <label for="checkR_1">1</label>
+                                        <input type="checkbox" id="checkR_2" name="R" value="2"> <label for="checkR_2">2</label>
+                                        <input type="checkbox" id="checkR_3" name="R" value="3"> <label for="checkR_3">3</label>
+                                        <input type="checkbox" id="checkR_4" name="R" value="4"> <label for="checkR_4">4</label>
+                                        <input type="checkbox" id="checkR_5" name="R" value="5"> <label for="checkR_5">5</label>
+                                        <input type ="submit" onclick="validate()">
+                                    </td>
+                                </tr>
+                            </table>
+                            </form>
+                        </td>
+                        <td>
+                            <table class="contentTable" id="res">
+                                <tbody>
+                                <tr>
+                                    <td>Coordinates</td>
+                                    <td>Result</td>
+                                    <td>Execution time</td>
+                                    <td>Time</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                </td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>

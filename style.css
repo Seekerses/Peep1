@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+.contentTable .Error {
+    color: red;
+    border: none;
+    font-size: smaller;
+}
+
+body {
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.7934524151457458) 0%, rgba(43,43,43,0.5889706224286589) 49%, rgba(39,39,39,0.6113795860140931) 100%),url("src/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    backdrop-filter: blur(3px);
+    color: antiquewhite;
+    height: 100vh;
+    width: 100vw;
+}
+
+.studInfo {
+    margin: auto;
+    padding-top: 1%;
+    width: 75%;
+    color: antiquewhite;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-style: italic;
+    font-size: larger;
+}
+
+.studInfo td{
+    width: 25%;
+    text-align: center;
+    border: rgba(155,155,155,1) 1px solid;
+    transition: 0.2s;
+}
+
+.studInfo td:hover {
+    width: 27%;
+    transition: 0.2s;
+    border: azure 1px solid;
+    animation: normal jumping 1s;
+}
+@keyframes jumping {
+    0% {
+        padding-left: 10px;
+    }
+    10%{
+        padding-left: 50px;
+    }
+    20% {
+        padding-right: 30px;
+    }
+    40% {
+        padding-left: 20px;
+    }
+    60% {
+        padding-right: 5px;
+    }
+    80% {
+        padding-left: 4px;
+    }
+    100% {
+        padding: 0;
+    }
+}
+
+@keyframes bouncing {
+    0% {
+        transform: scale(0.9,0.9);
+    }
+    10% {
+        transform: scale(1.15,1.15);
+    }
+    20% {
+        transform: scale(1,1);
+    }
+    30% {
+        transform: scale(1.07,1.07);
+    }
+    40% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.03,1.03);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+td:only-child {
+    position: relative;
+    width: 100%;
+}
+
+main > table {
+    width: 75%;
+    margin: auto;
+}
+
+#graph {
+    width: 25%;
+    margin: 50px auto 50px;
+}
+
+#graph:hover {
+    animation: normal bouncing 2s;
+}
+
+
+td {
+    vertical-align: top;
+    width: 25%;
+}
+
+.contentTable td{
+    transition: 0.2s;
+    border: rgba(155,155,155,1) 1px solid;
+    text-align: left;
+    font-weight: bold;
+    font-size: larger;
+    vertical-align: top;
+}
+
+.studInfo td:first-letter {
+    color: blueviolet;
+}
+
+.contentTable input {
+    margin-left: 2%;
+}
+
+.contentTable td:hover {
+    transform: scale(1.02,1.05);
+    transition: 0.1s;
+    border: azure 1px solid;
+}
