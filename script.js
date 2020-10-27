@@ -104,7 +104,7 @@ function sendForm(xArr, y, rArr){
         for (r in rArr) {
             data = "X=" + x + "&Y=" + y + "&R=" + r
             $.ajax({
-                url: "index.php",
+                url: "main.php",
                 type: "GET",
                 data: data,
                 success: function (msg) {
