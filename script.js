@@ -63,6 +63,7 @@ function addRow( X, Y, R, res, runtime, currTime){
     {
         var tbody = document.getElementById('res')
         var row = document.createElement("tr");
+        row.className = 'data'
         tbody.appendChild(row);
         var td1 = document.createElement("td");
         var td2 = document.createElement("td");
@@ -112,5 +113,13 @@ function sendForm(xArr, y, rArr){
                 }
             })
         }
+    }
+}
+
+function clearTable(){
+    let table = $('.data')
+    let i = 0;
+    for (i; i < table.length; i++){
+        table[i].remove()
     }
 }
